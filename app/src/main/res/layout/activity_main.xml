@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.brewday.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chooser_header" />
+
+        <Spinner
+            android:id="@+id/step_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/clean_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/fermentation_preset_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/clean_page_fermentation_preset_checkbox" />
+
+                        <CheckBox
+                            android:id="@+id/packaging_preset_checkbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/clean_page_packaging_preset_checkbox" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:onClick="setCleanPageCheckBoxPresets"
+                        android:text="@string/clean_page_apply_button" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_1"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_1" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_2"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_2" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_3"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_3" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_4"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_4" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_5"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_5" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_6"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_6" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_7"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_7" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_8"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_8" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_9"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_9" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_10"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_10" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_11"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_11" />
+
+                    <CheckBox
+                        android:id="@+id/clean_page_item_12"
+                        style="@style/checked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/clean_page_item_12" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorPrimary"
+                    android:onClick="resetCleanCheckBoxes"
+                    android:text="@string/reset" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mash_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="@string/mash_header"
+                    android:theme="@style/header" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="*">
+
+                    <TableRow android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/pounds_of_grain" />
+
+                        <TextView android:text="@string/six_pounds" />
+
+                        <TextView android:text="@string/seven_pounds" />
+
+                        <TextView android:text="@string/eight_pounds" />
+
+                        <TextView android:text="@string/nine_pounds" />
+
+                        <TextView android:text="@string/ten_pounds" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/mash_water" />
+
+                        <TextView android:text="@string/one_point_five" />
+
+                        <TextView android:text="@string/one_point_seven_five" />
+
+                        <TextView android:text="@string/two" />
+
+                        <TextView android:text="@string/two_point_two_five" />
+
+                        <TextView android:text="@string/two_point_five" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/raise_temp" />
+
+                        <TextView android:text="@string/three" />
+
+                        <TextView android:text="@string/three_point_five" />
+
+                        <TextView android:text="@string/four" />
+
+                        <TextView android:text="@string/four_point_five" />
+
+                        <TextView android:text="@string/five" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/absorbed" />
+
+                        <TextView android:text="@string/point_six" />
+
+                        <TextView android:text="@string/point_seven" />
+
+                        <TextView android:text="@string/point_eight" />
+
+                        <TextView android:text="@string/point_nine" />
+
+                        <TextView android:text="@string/one" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/sparge_water" />
+
+                        <TextView android:text="@string/three" />
+
+                        <TextView android:text="@string/three_point_five" />
+
+                        <TextView android:text="@string/four" />
+
+                        <TextView android:text="@string/four_point_five" />
+
+                        <TextView android:text="@string/five" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/boil_water" />
+
+                        <TextView android:text="@string/five_point_five" />
+
+                        <TextView android:text="@string/two_point_five" />
+
+                        <TextView android:text="@string/one" />
+
+                        <TextView android:text="@string/dash" />
+
+                        <TextView android:text="@string/dash" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/evaporated_water" />
+
+                        <TextView android:text="@string/point_five" />
+
+                        <TextView android:text="@string/point_five" />
+
+                        <TextView android:text="@string/point_five" />
+
+                        <TextView android:text="@string/one" />
+
+                        <TextView android:text="@string/one_point_seven_five" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/primary_wort" />
+
+                        <TextView android:text="@string/five_point_five" />
+
+                        <TextView android:text="@string/five_point_five" />
+
+                        <TextView android:text="@string/five_point_five" />
+
+                        <TextView android:text="@string/five_point_five" />
+
+                        <TextView android:text="@string/five_point_five" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="36dp"
+
+                            android:text="@string/secondary_gallons" />
+
+                        <TextView android:text="@string/five" />
+
+                        <TextView android:text="@string/five" />
+
+                        <TextView android:text="@string/five" />
+
+                        <TextView android:text="@string/five" />
+
+                        <TextView android:text="@string/five" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/boil_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/boil_time" />
+
+                            <EditText
+                                android:id="@+id/initial_total_boil_time"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/minutes"
+                                android:inputType="time" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hop_additions" />
+
+                            <EditText
+                                android:id="@+id/initial_hop_additions"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/total_additions"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:background="@color/colorPrimary"
+                        android:onClick="setInitialBoilValues"
+                        android:text="@string/set" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/hop_addition_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_to_next_addition" />
+
+                    <EditText
+                        android:id="@+id/hop_addition_current_increment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/minutes"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@color/colorPrimary"
+                    android:onClick="startTimer"
+                    android:text="@string/start_timer" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/total_remaining_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/remaining_time" />
+
+                    <TextView
+                        android:id="@+id/total_remaining_additions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remaining_hops" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ferment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sanitize_reminder"
+                    android:theme="@style/header" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/days_to_ferment" />
+
+                    <EditText
+                        android:id="@+id/number_of_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/days_to_ferment_hint"
+                        android:inputType="number" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:onClick="addReminderToCalendar"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/add_to_calendar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_original_gravity" />
+
+                    <EditText
+                        android:id="@+id/original_gravity_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:hint="@string/OG"
+                        android:inputType="numberDecimal" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/colorPrimary"
+                        android:onClick="setOriginalGravity"
+                        android:text="@string/enter" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/package_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sanitize_reminder"
+                    android:theme="@style/header" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/package1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/package2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/package3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/package4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_final_gravity" />
+
+                    <EditText
+                        android:id="@+id/final_gravity_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="@string/FG"
+                        android:inputType="numberDecimal" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/colorPrimary"
+                        android:onClick="setFinalGravity"
+                        android:text="@string/enter" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/display_OG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/OG_temp" />
+
+                    <TextView
+                        android:id="@+id/display_FG"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/FG_temp" />
+
+                    <TextView
+                        android:id="@+id/abv_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ABV_temp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:contentDescription="@string/picture_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bottle_glass" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

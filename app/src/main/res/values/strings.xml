@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Brew Day!</string>
+
+    <string-array name="steps_array">
+        <item>Clean and sanitize!</item>
+        <item>Mash the grain!</item>
+        <item>Boil the malt!</item>
+        <item>Ferment the wort!</item>
+        <item>Package your beer!</item>
+    </string-array>
+
+    <string name="clean_and_sanitize">Clean and sanitize!</string>
+    <string name="mash">Mash the grain!</string>
+    <string name="boil">Boil the malt!</string>
+    <string name="ferment">Ferment the wort!</string>
+    <string name="bottle_keg">Package your beer!</string>
+
+    <string name="chooser_header">Select a step:</string>
+
+    <string name="clean_page_apply_button">Apply</string>
+    <string name="clean_page_fermentation_preset_checkbox">Fermentation</string>
+    <string name="clean_page_packaging_preset_checkbox">Packaging</string>
+    <string name="clean_page_item_1">Sanitizer Solution</string>
+    <string name="clean_page_item_2">Tubing</string>
+    <string name="clean_page_item_3">Bung and Airlock</string>
+    <string name="clean_page_item_4">Carboy</string>
+    <string name="clean_page_item_5">Yeast Packet</string>
+    <string name="clean_page_item_6">Scissors</string>
+    <string name="clean_page_item_7">Funnel</string>
+    <string name="clean_page_item_8">Filters/Screens</string>
+    <string name="clean_page_item_9">Siphon</string>
+    <string name="clean_page_item_10">Bucket</string>
+    <string name="clean_page_item_11">Bottles/Caps/Keg</string>
+    <string name="clean_page_item_12">Filler</string>
+    <string name="reset">Reset</string>
+
+    <string name="mash_header">Step Mashing Guidelines Table</string>
+    <string name="pounds_of_grain">lbs grain</string>
+    <string name="six_pounds">6</string>
+    <string name="seven_pounds">7</string>
+    <string name="eight_pounds">8</string>
+    <string name="nine_pounds">9</string>
+    <string name="ten_pounds">10</string>
+    <string name="mash_water">Gallons of mash water at 130ºF</string>
+    <string name="one_point_five">1.5</string>
+    <string name="one_point_seven_five">1.75</string>
+    <string name="two">2</string>
+    <string name="two_point_two_five">2.25</string>
+    <string name="two_point_five">2.5</string>
+    <string name="raise_temp">Quarts of water at 200ºF to raise mash temp to 150ºF</string>
+    <string name="three">3</string>
+    <string name="three_point_five">3.5</string>
+    <string name="four">4</string>
+    <string name="four_point_five">4.5</string>
+    <string name="five">5</string>
+    <string name="absorbed">Gallons of water absorbed by grain</string>
+    <string name="point_six">.6</string>
+    <string name="point_seven">.7</string>
+    <string name="point_eight">.8</string>
+    <string name="point_nine">.9</string>
+    <string name="one">1</string>
+    <string name="sparge_water">Gallons of sparge water at 170ºF</string>
+    <string name="boil_water">Quarts of water added to boil</string>
+    <string name="five_point_five">5.5</string>
+    <string name="dash">-</string>
+    <string name="evaporated_water">Gallons of water evaporated during boil</string>
+    <string name="point_five">.5</string>
+    <string name="primary_wort">Gallons of wort in primary fermentation</string>
+    <string name="secondary_gallons">Gallons for secondary fermentation</string>
+
+    <string name="boil_time">Boil time:</string>
+    <string name="minutes">minutes</string>
+    <string name="hop_additions">Hop additions:</string>
+    <string name="total_additions">total additions</string>
+    <string name="set">Set</string>
+    <string name="time_to_next_addition">Time to next hop addition:</string>
+    <string name="start_timer">start timer</string>
+    <string name="remaining_time">Remaining total time:&#160;</string>
+    <string name="remaining_hops">Remaining total hop additions:&#160;</string>
+    <string name="hops_done">No more hop additions!</string>
+    <string name="timer_set_for">Timer set for&#160;</string>
+    <string name="space_minutes">&#160;minutes</string>
+    <string name="boil_timer">Boil timer</string>s
+    <string name="set_boil_error">Please enter valid values for both the total boil time and initial hop additions</string>
+    <string name="set_timer_error">Please enter a valid value for time to next hop addition</string>
+
+    <string name="sanitize_reminder">Remember to sanitize!</string>
+
+    <string name="days_to_ferment">Enter days to ferment:</string>
+    <string name="days_to_ferment_hint">Number of days</string>
+    <string name="add_to_calendar">Add to calendar</string>
+    <string name="fermentation_done">Fermentation is done!</string>
+    <string name="enter_original_gravity">Enter Original Gravity:</string>
+    <string name="OG">OG</string>
+    <string name="OG_colon">OG:&#160;</string>
+    <string name="OG_entered">Original gravity entered:&#160;</string>
+    <string name="enter">Enter</string>
+    <string name="days_to_ferment_error">Please enter a valid value for the number of days to ferment</string>
+    <string name="original_gravity_error">Please enter a valid value for the original gravity</string>
+
+    <string name="package1">1) Transfer the wort to the bottling bucket</string>
+    <string name="package2">2) Attach the tubes and filler to the bucket</string>
+    <string name="package3">3) Add boiled sugar solution to the bucket</string>
+    <string name="package4">4) Fill sanitized bottles</string>
+    <string name="enter_final_gravity">Enter Final Gravity:</string>
+    <string name="FG">FG</string>
+    <string name="FG_colon">FG:&#160;</string>
+    <string name="OG_temp">OG: 1.000</string>
+    <string name="FG_temp">FG: 1.000</string>
+    <string name="ABV_temp">0.0% ABV</string>
+    <string name="FG_entered">Final gravity entered:&#160;</string>
+    <string name="percent_abv">% ABV</string>
+    <string name="final_gravity_error">Please enter a valid value for the final gravity</string>
+    <string name="picture_description">A bottled homebrew and a glass from which to drink it</string>
+</resources>
